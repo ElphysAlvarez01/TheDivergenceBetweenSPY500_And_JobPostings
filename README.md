@@ -47,11 +47,15 @@ This analysis aimed to find the moving average with the strongest positive relat
 - A linear regression model was developed to predict SPY prices using JOLTS data as the independent variable.
 - The model was trained on historical data up to a certain cutoff date and then used to forecast SPY prices beyond this date. The model focuses on historical data, using SPY and JOLTS data only up to September 30, 2022, for model training. 
 - I selected Sept 2022 as the cut-off date to train the model because that is when the divergence between JOLTs and SPY Prices starts.
+  
 ![](SPYPRICES_JOLTS_SPYPRICEPREDICTIONS_Analysis2.PNG)
+
 **Therefore, I wanted to understand what would have been the prices of the SPY 500 if the divergence did not occur.**
 - When looking at the Percentage difference on July 1, 2024, between Actual SPY Prices (550.81) and the Predicted Price (299.5), there was a 251.3 point difference, or 83.9% difference. 
 - When we compare the July 1, 2024 Predicted Price from the original analysis (above) it was 315.1, for this 2nd analysis it is 299.5, and the actual price was 550.8.
+  
 ![](SPY_ACTUAL_PRED_TABLE.PNG)
+
 #### **5. Conclusion:** 
 - I conducted this analysis to practice my Python skills and explore the relationship between job openings, which typically indicate a strong economy, and the SPY500, a popular ETF tracking the stock market. 
 - I expected that high SPY prices would correlate with strong job openings, and indeed, I found a strong correlation of 0.92. However, I noticed a divergence after October 2022, suggesting a potential shift in economic dynamics. 
