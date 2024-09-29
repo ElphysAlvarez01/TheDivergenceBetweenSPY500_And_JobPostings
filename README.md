@@ -1,6 +1,6 @@
 # The S&P 500 & Job Postings Historical Relationship (Correlation and Linear Regression):
-## Did the S&P 500 Break-up with the JOLTs report after years of going strong? 
 
+# $${\color{blue}Did \ the \ S\&P \ 500 \ break \ up \ with \ U.S. \ Job \ Openings \ after \ a \ long-term \ strong \ relationship?}$$
 Varies analysis looking at the relationship between the SPY500 and (JOLTS) Job Openings in the US. 
 
 ### Overview:
@@ -10,12 +10,12 @@ The analysis aims to investigate the relationship between S&P 500 (SPY) and the 
 - SPY Data: Historical daily S&P 500 ETF (SPY) prices from 2000 to 2024.
 - JOLTS Data: Monthly data on job openings across various sectors in the U.S. economy, from the U.S. Bureau of Labor Statistics (BLS).
 
-- ### Analysis Summary:
-- #### 1. Data Preprocessing: 
+### Analysis Summary:
+#### 1. Data Preprocessing: 
 - Basic Preprocessing was conducted on both datasets concerning matching dates and formats. 
 - The datasets were merged using the date column.
 
-- #### 2. Correlation Analysis:
+#### 2. Correlation Analysis:
 **Correlation Hypothesis:** I initially hypothesized that there would be a strong correlation between SPY prices and JOLTS (Job Openings). Generally, strong job opening data reflects a robust economy, as companies expand and create more positions, which in turn should benefit businesses and drive stock prices higher. 
 
 **Historical Trends:** 
@@ -37,13 +37,12 @@ The analysis aims to investigate the relationship between S&P 500 (SPY) and the 
 ![](PNG_12M_RollingCorr_HIST_SPYJOLTS.png)
 
 #### **3. Moving Average Correlation:**
-This analysis aimed to find the moving average with the strongest positive relationship to SPY Prices. The 25-day MA appeared to have the strongest relationship. 
+- This analysis aimed to find the moving average with the strongest positive relationship to SPY Prices. The 25-day MA appeared to have the strongest relationship. 
 
 ![](MovingAveCorrResults.PNG)
 ![](JOLTSReport_MAs_SPYPRICES_FedPivotEvent.PNG)
 
 #### **4. Predictive Modeling:**
-
 - A linear regression model was developed to predict SPY prices using JOLTS data as the independent variable.
 - The model was trained on historical data up to a certain cutoff date and then used to forecast SPY prices beyond this date. The model focuses on historical data, using SPY and JOLTS data only up to September 30, 2022, for model training. 
 - I selected Sept 2022 as the cut-off date to train the model because that is when the divergence between JOLTs and SPY Prices starts.
