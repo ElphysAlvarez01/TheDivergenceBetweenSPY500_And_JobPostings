@@ -2,15 +2,15 @@
 Varies analysis looking at the relationship between the SPY500 and (JOLTS) Job Openings in the US. 
 
 ### Overview:
-The purpose of the analysis is to investigate the relationship between S&P 500 (SPY) and the U.S. Job openings. The aim is to understand how changes in the labor market correlate with the performance of the SPY Prices. 
+The analysis aims to investigate the relationship between S&P 500 (SPY) and the U.S. Job openings. The aim is to understand how changes in the labor market correlate with the performance of the SPY Prices. 
 
 ### Data Source:
-- SPY Data: Historical daily prices of the S&P 500 ETF (SPY) from 2000 to 2024.
+- SPY Data: Historical daily S&P 500 ETF (SPY) prices from 2000 to 2024.
 - JOLTS Data: Monthly data on job openings across various sectors in the U.S. economy, from the U.S. Bureau of Labor Statistics (BLS).
 
 - ### Analysis Summary:
 - #### 1. Data Preprocessing: 
-- Basic Preprocessing was conducted on both datasets to concern matching dates, and formats. 
+- Basic Preprocessing was conducted on both datasets concerning matching dates and formats. 
 - The datasets were merged using the date column.
 
 - #### 2. Correlation Analysis:
@@ -18,7 +18,7 @@ The purpose of the analysis is to investigate the relationship between S&P 500 (
 
 **Historical Trends:** 
 - Between 2001 and mid-2009, JOLTS consistently trended higher than SPY prices, similar to the periods from 2015 to 2019 and April 2021 to March 2023. 
-
+![](main/PNG_Actual_SPY_JOLTS_HIST.PLOT.png)
 **Recent Divergence:** 
 - From September 2022, an interesting divergence occurs where SPY prices begin to rise while job openings (JOLTS) continue to decline. This suggests that while the labor market appears to be softening, the stock market has started to recover. 
 - What could explain this disconnect? 
@@ -36,8 +36,8 @@ IMAGE HERE:
 
 **-Around 2020, during the COVID-19-induced recession,** there is a significant drop in correlation. The sudden drop could reflect the drastic economic impacts of the pandemic, where the job market and stock prices reacted differently. As I recall, there was a large number of job openings and a lack of talent to fill the roles.
 
-#### **3. Moving Average Corelation:**
-The aim of this analysis was to find the moving average with the strongest positive relationship to SPY Prices. 
+#### **3. Moving Average Correlation:**
+This analysis aimed to find the moving average with the strongest positive relationship to SPY Prices. 
 
 IMAGE HERE
 
@@ -45,10 +45,10 @@ IMAGE HERE
 
 - A linear regression model was developed to predict SPY prices using JOLTS data as the independent variable.
 - The model was trained on historical data up to a certain cutoff date and then used to forecast SPY prices beyond this date. The model focuses on historical data, using SPY and JOLTS data only up to September 30, 2022, for model training. 
-- I select Sept 2022 as the cut off date to train the model because that is when the divergence between JOLTs and SPY Prices start.
+- I selected Sept 2022 as the cut-off date to train the model because that is when the divergence between JOLTs and SPY Prices starts.
 
 **Therefore, I wanted to understand what would have been the prices of the SPY 500 if the divergence did not occur.**
-- When looking at the Percentage difference on July 1, 2024 between Actual SPY Prices (550.81) and the Predicted Price (299.5), there was a 251.3 point difference, or 83.9% difference. 
+- When looking at the Percentage difference on July 1, 2024, between Actual SPY Prices (550.81) and the Predicted Price (299.5), there was a 251.3 point difference, or 83.9% difference. 
 - When we compare the July 1, 2024 Predicted Price from the original analysis (above) it was 315.1, for this 2nd analysis it is 299.5, and the actual price was 550.8.
 
 #### **5. Conclusion:** 
@@ -57,7 +57,7 @@ IMAGE HERE
 - This could indicate that the market is pricing in future expectations differently than before, perhaps due to changes in monetary policy or other economic factors. For example, investors don't want to miss the strong performance of the SPY 500 and expect monetary policy to help JOLTs in the future. 
 - It’s also possible that businesses are focusing more on innovations such as AI and margins rather than hiring, which could be why job openings have slowed down.
 
-#### **Sorry more questions / thought here:**
+#### **Sorry more questions/thoughts here:**
 **This divergence could suggest several scenarios:**
 1. Are organizations reducing job openings in anticipation of economic challenges that the stock market has not yet reflected?
 2. Could the stock market be projecting strong economic growth despite lower JOLTS numbers, especially with unemployment rates at historic lows?
@@ -67,9 +67,9 @@ IMAGE HERE
 
 **What could happen next?**
 1. I plan to continue to monitor the relationship between JOLTS and SPY as I am interested in seeing what unfolds. 
-2. What could potentially be the next moves?
+2. What could potentially be the next move?
     - **Best Case scenario:** Monetary Policy changes and JOLTs increase as SPY Prices increase as well. If this happens, will JOLTS catch up to SPY to mirror the directional relationship of the past. 
     - **OK Case Scenario:** Monetary Policy changes and JOLTs increase as SPY Prices trade in a range until JOLT values catch up as a reversion to the mean? Can this be possible? 
     - **Weird Case Scenario:** JOLT values continue to decrease as SPY Prices continue to increase. 
-    - **Worst case Scenario:** JOLT value stay relatively the same as SPY Prices met it at the predicted values (315 or 299)
-    - **POOPY DOOPY Case Scenario:** JOLT values continue to decrease low as SPY prices met it to the predicted values (315 or 299). 
+    - **Worst-case Scenario:** JOLT value stays relatively the same as SPY Prices met it at the predicted values (315 or 299)
+    - **POOPY DOOPY Case Scenario:** JOLT values continue to decrease low as SPY prices met the predicted values (315 or 299). 
