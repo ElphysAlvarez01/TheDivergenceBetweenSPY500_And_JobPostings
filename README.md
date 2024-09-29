@@ -17,8 +17,10 @@ The analysis aims to investigate the relationship between S&P 500 (SPY) and the 
 **Correlation Hypothesis:** I initially hypothesized that there would be a strong correlation between SPY prices and JOLTS (Job Openings). Generally, strong job opening data reflects a robust economy, as companies expand and create more positions, which in turn should benefit businesses and drive stock prices higher. 
 
 **Historical Trends:** 
-- Between 2001 and mid-2009, JOLTS consistently trended higher than SPY prices, similar to the periods from 2015 to 2019 and April 2021 to March 2023. 
-![](main/PNG_Actual_SPY_JOLTS_HIST.PLOT.png)
+- Between 2001 and mid-2009, JOLTS consistently trended higher than SPY prices, similar to the periods from 2015 to 2019 and April 2021 to March 2023.
+##### SPY 500 VS. JOLTS Totals with Recessions pds. 
+![](main/main/PNG_Actual_SPY_JOLTS_HIST.PLOT.png)
+
 **Recent Divergence:** 
 - From September 2022, an interesting divergence occurs where SPY prices begin to rise while job openings (JOLTS) continue to decline. This suggests that while the labor market appears to be softening, the stock market has started to recover. 
 - What could explain this disconnect? 
@@ -26,9 +28,7 @@ The analysis aims to investigate the relationship between S&P 500 (SPY) and the 
 ##### **Next Steps/ Future Research:** 
 - I would like to measure for how long on average JOLTS and SPY Prices start to go down before there is a recession. 
 - What recovers first, JOLTS or SPY?
-
-##### SPY 500 VS. JOLTS Totals with Recessions pds. 
-IMAGE HERE: 
+- 
 **Fluctuating Correlation:** 
 - The correlation between SPY and JOLTS is not consistently positive or negative. It swings back and forth, which suggests that the relationship between stock prices and job openings is dynamic. 
 
