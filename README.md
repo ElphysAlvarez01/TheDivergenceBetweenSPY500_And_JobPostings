@@ -1,5 +1,5 @@
-# The S&P 500 & Job Postings Historical Relationship (Correlation and Linear Regression):
-## Did the S&P 500 break-up with the U.S. Job Openings after a long-term strong relationship? 
+![](Banner_SPY_JOLTS.png)
+## Did the S&P 500 break up with the U.S. Job Openings after a long-term strong relationship? 
 ### Overview:
 The analysis aims to investigate the relationship between S&P 500 (SPY) and the U.S. Job openings. The aim is to understand how changes in the labor market correlate with the performance of the SPY Prices. 
 
