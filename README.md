@@ -1,35 +1,34 @@
 ![](Banner_SPY_JOLTS.png)
 ## Did the S&P 500 break up with the U.S. Job Openings after a long-term strong relationship? 
 ### Overview:
-The analysis aims to investigate the relationship between S&P 500 (SPY) and the U.S. Job openings. The aim is to understand how changes in the labor market correlate with the performance of the SPY Prices. 
+This analysis aims to investigate the relationship between S&P 500 (SPY) and the U.S. Job openings. 
 
 ### Data Source:
+- Analysis was conducted on Sept 2024, but files are as of July 2024. 
 - SPY Data: Historical daily S&P 500 ETF (SPY) prices from 2000 to 2024.
 - JOLTS Data: Monthly data on job openings across various sectors in the U.S. economy, from the U.S. Bureau of Labor Statistics (BLS).
 
 ### Analysis Summary:
 #### 1. Data Preprocessing: 
-- Basic Preprocessing was conducted on both datasets concerning matching dates and formats. 
+- Basic Preprocessing was conducted on both datasets to confirm matching dates and formats. 
 - The datasets were merged using the date column.
 
 #### 2. Correlation Analysis:
 **Correlation Hypothesis:** I initially hypothesized that there would be a strong correlation between SPY prices and JOLTS (Job Openings). Generally, strong job opening data reflects a robust economy, as companies expand and create more positions, which in turn should benefit businesses and drive stock prices higher. 
 
-**Historical Trends:** 
-- Between 2001 and mid-2009, JOLTS consistently trended higher than SPY prices, similar to the periods from 2015 to 2019 and April 2021 to March 2023.
+**Historical Trends:** Between 2001 and mid-2009, JOLTS consistently trended higher than SPY prices, similar to the periods from 2015 to 2019 and April 2021 to March 2023.
 ##### SPY 500 VS. JOLTS Totals with Recessions pds. 
 ![](PNG_Actual_SPY_JOLTS_HIST.PLOT.png)
 
 **Recent Divergence:** 
 - From September 2022, an interesting divergence occurs where SPY prices begin to rise while job openings (JOLTS) continue to decline. This suggests that while the labor market appears to be softening, the stock market has started to recover. 
-- What could explain this disconnect? 
+- What could explain this disconnect? What changed in the labor market or investors' minds that caused the divergence? 
 
-**Fluctuating Correlation:** 
-- The correlation between SPY and JOLTS is not consistently positive or negative. It swings back and forth, which suggests that the relationship between stock prices and job openings is dynamic. 
+**Fluctuating Correlation:** The correlation between SPY and JOLTS is not consistently positive or negative. It swings back and forth, which suggests that the relationship between stock prices and job openings is dynamic. 
 
-**-Correlation Around Recessions:** During recessions (shaded areas), the correlation tends to drop or become more volatile. 
+**Correlation Around Recessions:** During recessions (shaded areas), the correlation tends to drop or become more volatile. 
 
-**-Around 2020, during the COVID-19-induced recession,** there is a significant drop in correlation. The sudden drop could reflect the drastic economic impacts of the pandemic, where the job market and stock prices reacted differently. As I recall, there was a large number of job openings and a lack of talent to fill the roles.
+**Around 2020, during the COVID-19-induced recession,** there is a significant drop in correlation. The sudden drop could reflect the drastic economic impacts of the pandemic, where the job market and stock prices reacted differently. As I recall, there was a large number of job openings and a lack of talent to fill the roles.
 ![](ROLLINGCORRS_6MONTHS.PNG)
 ![](PNG_12M_RollingCorr_HIST_SPYJOLTS.png)
 
