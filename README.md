@@ -1,7 +1,7 @@
 ![](Banner_SPY_JOLTS.png)
 ## Did the S&P 500 break up with the U.S. Job Openings after a long-term strong relationship? 
 ### Overview:
-This analysis aims to investigate the relationship between S&P 500 (SPY) and the U.S. Job openings. 
+This analysis investigates the relationship between S&P 500 (SPY) and the U.S. Job openings. 
 
 ### Data Source:
 - Analysis was conducted on Sept 2024, but files are as of July 2024. 
@@ -14,10 +14,10 @@ This analysis aims to investigate the relationship between S&P 500 (SPY) and the
 - The datasets were merged using the date column.
 
 #### 2. Correlation Analysis:
-**Correlation Hypothesis:** I initially hypothesized that there would be a strong correlation between SPY prices and JOLTS (Job Openings). Generally, strong job opening data reflects a robust economy, as companies expand and create more positions, which in turn should benefit businesses and drive stock prices higher. 
+**Correlation Hypothesis:** I initially hypothesized that there would be a strong correlation between SPY prices and JOLTS (Job Openings). Generally, strong job opening data reflects a robust economy, as companies expand and create more positions, which should benefit businesses and drive stock prices higher. There was in fact a strong correlation of .92, and if you look at the image you can see the directional relationship. 
 
-**Historical Trends:** Between 2001 and mid-2009, JOLTS consistently trended higher than SPY prices, similar to the periods from 2015 to 2019 and April 2021 to March 2023.
-##### SPY 500 VS. JOLTS Totals with Recessions pds. 
+**Historical Trends:** Between 2001 and mid-2009, JOLTS consistently trended higher than SPY prices, similar to the period from 2015 to 2019 and April 2021 to March 2023.
+##### SPY 500 VS. JOLTS Totals with Recessions periods. 
 ![](PNG_Actual_SPY_JOLTS_HIST.PLOT.png)
 
 **Recent Divergence:** 
@@ -33,7 +33,7 @@ This analysis aims to investigate the relationship between S&P 500 (SPY) and the
 ![](PNG_12M_RollingCorr_HIST_SPYJOLTS.png)
 
 #### **3. Moving Average Correlation:**
-- This analysis aimed to find the moving average with the strongest positive relationship to SPY Prices. The 25-day MA appeared to have the strongest relationship. 
+- The next analysis looked at the moving averages of the JOLTs and then analyzed which one correlated the most with SPY500 prices. I ran a loop to check the top MA correlations. The 25-day MA appeared to have the strongest relationship. Therefore, the 25-day MA can be used to understand and confirm a trend change. 
 
 ![](MovingAveCorrResults.PNG)
 ![](JOLTSReport_MAs_SPYPRICES_FedPivotEvent.PNG)
@@ -60,8 +60,9 @@ This analysis aims to investigate the relationship between S&P 500 (SPY) and the
 #### **Sorry more questions/thoughts here:**
 **This divergence could suggest several scenarios:**
 1. Are organizations reducing job openings in anticipation of economic challenges that the stock market has not yet reflected?
-2. Could the stock market be projecting strong economic growth despite lower JOLTS numbers, especially with unemployment rates at historic lows?
-3. Do high SPY prices indicate that a strong relationship with JOLTS is no longer necessary? If so, what does this signify about the changing economic landscape? Does the lack of correlation suggest that traditional indicators like JOLTS are becoming less relevant for predicting stock market performance?
+2. Could the stock market be projecting strong economic growth (e.g. higher JOLTs, outstanding earning reports) despite the current low JOLTS numbers, especially with unemployment rates at historic lows?
+3. Are investors' optimism diverging away from the reality of where the health of the U.S. economy is heading? 
+4. Do high SPY prices indicate that a strong relationship with JOLTS is no longer necessary? If so, what does this signify about the changing economic landscape? Does the lack of correlation suggest that traditional indicators like JOLTS are becoming less relevant for predicting stock market performance?
 
 ![](SPYJOLTSMEME.jpg)
 
@@ -71,10 +72,10 @@ This analysis aims to investigate the relationship between S&P 500 (SPY) and the
 **What could happen next?**
 1. I plan to continue to monitor the relationship between JOLTS and SPY as I am interested in seeing what unfolds. 
 2. What could potentially be the next move?
-    - **Best Case scenario:** Monetary Policy changes and JOLTs increase as SPY Prices increase as well. If this happens, will JOLTS catch up to SPY to mirror the directional relationship of the past? 
+    - **Best Case scenario:** Monetary Policy changes and JOLTs increase as SPY Prices increase as well. If this happens, will JOLTS catch up to mirror the SPY500 directional relationship of the past? 
     - **OK Case Scenario:** Monetary Policy changes and JOLTs increase as SPY Prices trade in a range until JOLT values catch up as a reversion to the mean? Can this be possible? 
-    - **Weird Case Scenario:** JOLT values continue to decrease as SPY Prices continue to increase. 
-    - **Worst-case Scenario:** JOLT value stays relatively the same as SPY Prices met it at the predicted values (315 or 299)
-    - **POOPY DOOPY Case Scenario:** JOLT values continue to decrease low as SPY prices met the predicted values (315 or 299).
+    - **Weird Case Scenario:** JOLT values continue to decrease even lower as SPY Prices continue to increase. 
+    - **Worst-case Scenario:** JOLT value stays relatively the same level as SPY Prices met it at the predicted values (315 or 299)
+    - **POOPY DOOPY Case Scenario:** JOLT values continue to decrease even lower as SPY prices met the predicted values (315 or 299).
 ## Although I answered a few of my questions and discovered interesting findings, I am now left with more questions. I will continue to monitor this relationship to understand how it unfolds. 
 ![](MOREQUESTIONSMEME.jpg)
